@@ -107,8 +107,13 @@
         <source url="https://cdn.cocoapods.org/"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="GoogleSignIn" spec="~> 5.0.2"/>
+        <!--
+	<pod name="GoogleSignIn" spec="~> 5.0.2"/>
         <pod name="GoogleUtilities" spec="~> 6.7"/>
+	-->
+	<!-- see https://github.com/dpa99c/cordova-plugin-firebasex/issues/269 -->
+	<pod name="GoogleSignIn" spec="~> 4.4.0"/>
+        <pod name="GoogleUtilities" spec="~> 6.5.0"/>
       </pods>
     </podspec>
 
